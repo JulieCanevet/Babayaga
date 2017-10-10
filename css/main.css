@@ -103,8 +103,14 @@ body {
 h2, p {
     margin: 1em auto 1em 1em;
 }
+h2{
+    color: #c90031;
+}
 img {
     width: 100%;
+}
+span {
+    font-weight: bold;
 }
 /* Barra de navigation */
 .bg-faded {
