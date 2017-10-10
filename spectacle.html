@@ -3,14 +3,15 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>Cie Babayaga</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/normalize.css">        
+        <link rel="stylesheet" href="css/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -20,76 +21,236 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-    <nav>
-        <ul>
-            <li><a href="index.html">accueil</a></li>
-            <li><a href="spectacle.html">nos spectacles</a></li>
-            <li><a href="compagnie.html">la compagnie</a></li>
-            <li><a href="contact.html">contact</a></li>
-        </ul>
-    </nav>
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="index.html">LOGO</a>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="spectacle.html">Nos spectacles</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="compagnie.html">La compagnie</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
     <section class="tournee">
-        <p>*Pour tous nos spectacles, nous sommes techniquement autonomes</p>
         <h2>En tournée :</h2>
+        <p>*Pour tous nos spectacles, nous sommes techniquement autonomes</p>
 
-        <article class="spectacle">
-            <figure>
-                <img src="">  
-            </figure>
-            <div class="description">
-                <h3>Doudou fait des bisous (à partir de 4 ans)</h3>
-                <br>
-                <a href="">En savoir plus</a>
-            </div>
-        </article>
+        <section id="presentationCartes">
+                  <article class="card" style="width: 20rem;">
+                      <img class="card-img-top" src="img/cirque.png" alt="">
+                      <div class="card-block">
+                          <h4 class="card-title">CIRQUE DIVERS</h4>
+                          <p class="card-text">Théâtre et marionnettes
+                          <br>
+                          - Tout public à partir de 2 ans -</p>
+                          <p>Pour découvrir les grands numéros de cirque
+                          interprétés par d’incroyables phénomènes.</p>
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cirque">
+                            En savoir plus
+                          </button>
+                      </div>
+                  </article>
 
-        <article class="spectacle">
-            <figure>
-                <img src="">  
-            </figure>
-            <div class="description">
-                <h3>Doudou fait des bisous (à partir de 4 ans)</h3>
-                <br>
-                <a href="">En savoir plus</a>
-            </div>
-        </article>
-        
-        <article class="spectacle">
-            <figure>
-                <img src="">  
-            </figure>
-            <div class="description">
-                <h3>Doudou fait des bisous (à partir de 4 ans)</h3>
-                <br>
-                <a href="">En savoir plus</a>
-            </div>
-        </article>
-    
-        <article class="spectacle">
-            <figure>
-                <img src="">  
-            </figure>
-            <div class="description">
-                <h3>Doudou fait des bisous (à partir de 4 ans)</h3>
-                <br>
-                <a href="">En savoir plus</a>
-            </div>
-        </article>
+                  <article class="card" style="width: 20rem;">
+                      <img class="card-img-top" src="img/doudou.png" alt="Reproduction du site de l'archiduchesse">
+                      <div class="card-block">
+                          <h4 class="card-title">LE NOEL DU DOUDOU</h4>
+                          <p class="card-text">Marionnettes de table et musique
+                            <br>
+                            - Pour les enfants de 2 à 7 ans -</p>
+                            <p>Scénettes poétiques et intimistes pour bien préparer Noël.</p>
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#doudou">
+                            En savoir plus
+                          </button>
+                      </div>
+                  </article>
 
+                  <article class="card" style="width: 20rem;">
+                      <img class="card-img-top" src="img/famille.png" alt="Reproduction du site Le Bon Coin">
+                      <div class="card-block">
+                          <h4 class="card-title">PORTRAIT DE FAMILLE</h4>
+                          <p class="card-text">Ou l’envers du décor<br>
+                          Théatre, musique et marionnettes<br>
+                          - Tout public à partir de 3 ans -</p>
+                          <p>Une belle occasion de faire plus ample
+                          connaissance avec la grande famille des
+                          marionnettes.</p>
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#famille">
+                            En savoir plus
+                          </button>
+                      </div>
+                  </article>
+
+                  <article class="card" style="width: 20rem;">
+                      <img class="card-img-top" src="img/taratatouille.png" alt="Reproduction du site Le Bon Coin">
+                      <div class="card-block">
+                          <h4 class="card-title">TARATATOUILLE</h4>
+                          <p class="card-text">Musique, marionnettes et vidéo<br>
+                          - Tout public à partir de 3 ans -<br>
+                          <p>Bienvenu sur le plateau de la célèbre<br>
+                          émission Taratatouille pour redécouvrir en
+                          chansons les bonnes habitudes alimentaires.</p>
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#taratatouille">
+                            En savoir plus
+                          </button>
+                      </div>
+                  </article>
+
+                  <article class="card" style="width: 20rem;">
+                      <img class="card-img-top" src="img/taratatouille.png" alt="Reproduction du site Le Bon Coin">
+                      <div class="card-block">
+                          <h4 class="card-title">Petit n'ira pas se coucher</h4>
+                          <p class="card-text">Marionnette type Bunraku, musique et vidéo<br>
+                          - Tout public à partir de 3 ans -<br>
+                          <p>Là où le jour s’éteint, l’aventure commence…<br>
+                          Petit pars à la quête du sommeil</p>
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#taratatouille">
+                            En savoir plus
+                          </button>
+                      </div>
+                  </article>
+                </section>
+<!-- Modal -->
+<article class="modal fade" id="cirque" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">CIRQUE DIVERS</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <figure>
+            <img src="img/cirque.png">
+        </figure>
+            <p>« Entrez, entrez, et vous verrez ... Le plus petit cirque du monde !!
+Paillasse, son directeur, a rapporté, des quatre coins de la Terre, les plus incroyables phé- nomènes ... Dont le LION D’INDE ! »<br>
+L’humour, la dérision et, avouons-le, un peu de magie, permettent de faire entrer tous les grands numéros de cirque dans ce petit chapiteau.
+Tout au long de ce spectacle le comédien et les marionnettes s’interpellent : On rit, on rouspète, on panique !!!
+Les spectateurs pénètrent ainsi peu à peu dans l’univers poétique et décalé de la com- pagnie.</p>   
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</article>
+
+<article class="modal fade" id="doudou" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Le noel du Doudou</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <figure>
+            <img src="img/doudou.png">
+        </figure>
+            <p>Un catalogue de jouets, une lettre au Père Noël, de la neige, un Saint Nicolas en choco- lat... . Il y a des signes qui ne trompent pas : Noël est là!<br>
+A travers une dizaine de scénettes tour à tour drôles, tendres et émouvantes, on se retrouve au pied du sapin à guetter l’arrivée du Père-Noël bien décidé cette année à l’apercevoir!<br>
+Tout se passe sur un lit, là où l’enfant l’a laissé pour aller à l’école, le Doudou (un chiffon) prépare lui aussi Noël !<br>
+Tout comme un calendrier de l’avent le rideau s’ouvre sur (7) différentes scènes représenta- tives des préparatifs de Noël :</p>
+<ul>
+<li>La découverte du catalogue de jouets</li>
+<li>L’écriture de la lettre au Père Noël</li>
+<li>La tombée de la neige : glissades et boules sont au rendez-vous</li>
+<li>Les premiers petits rhumes et les journées bien au chaud au fond de son lit</li>
+<li>La dégustation d’un Saint Nicolas en chocolat</li>
+<li>La décoration du sapin</li>
+<li>La nuit de Noël</li>
+</ul><p>A la manière d’un  lm muet, aucune parole n’est prononcée : une musique au piano ac- compagne chaque action, chaque émotion : chacun mettra les mots qu’il souhaite et les enfants ne s’en privent pas à chaque représentation : ils aiment commenter et partager avec leur voisin ce qu’ils voient .</p>   
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</article>
+
+<article class="modal fade" id="famille" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Portrait de famille</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <figure>
+            <img src="img/grd-mere.png">
+        </figure>
+        <p>Dans cette famille, il y a le Grand-père : il ne se déplace qu’avec des  fils. La Mère n’est qu’une ombre et la Petite Fille danse au bout des doigts.<br>
+Ce sont les “Marionnettes”; ils ne peuvent pas renier avoir hérité du même trait de caracrtère: farceurs, poétiques et drôles. Ils font tourner la marionnettiste et son mu- sicien en bourrique.<br>
+Ce spectacle est une belle occasion pour faire plus ample connaissance avec ce- tte grande famille.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</article>
+
+<article class="modal fade" id="taratatouille" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Taratatouille</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <figure>
+            <img src="img/taratatouille_modal.png">
+        </figure>
+        <p>A partir d’un clin d’œil à la célèbre émission de Nagui : TARATATA, sensibiliser les enfants dès le plus jeune âge aux bonnes habitudes alimentaires.<br>
+Comment porter ce message sans être rébarbatif pour autant ?<br>
+o Grâce aux chansons entraînantes au style actuel : rap, reggae, rock, blues... o A l’absence de comédien visible sur scène/ pas d’adulte faisant la leçon.
+o Un visuel décalé : les aliments vantent eux même leurs mérites.<br>
+Les marionnettes représentent les différentes catégories d’aliments :<br>
+<ul>
+<li>Les viandes (Tina Paldroit : le pilon de poulet),</li>
+<li>Les produits laitiers (Gourt : le yaourt bulgare),</li>
+<li>Les féculents (Jules Pétri : le pain), - les fruits (Couli Anan’ : l’ananas)</li> 
+<li>Les légumes (M Pocarot’ : la carotte).</li>
+</ul>
+Ils forment cinq chanteurs se complétant à merveille : Un plateau (repas) parfaitement équilibré !<br>
+o L’emploi d’un contre-exemple :<br>
+L’arrivée de Heinz : le burger et de Choupa : la sucette provoque une réaction entre
+scandale et jubilation : l’enfant a compris le principe du repas équilibré et en est  er. Les enfants s’amusent tout en développant leurs connaissances.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</article>
 </section>
-
-
-
-
-
-
 
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/js/bootstrap.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

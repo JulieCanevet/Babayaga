@@ -94,135 +94,109 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-nav ul {
-    display: flex;
-    justify-content: space-around;
+body {
+    background-color: #eaecfa;
 }
-
-li {
-    list-style-type: none;
+h2 {
+    margin: 1em auto 1em 1em;
 }
-
-nav a {
-    text-decoration: none;
-    color: black;
-}
-
-.accueil {
-    display: flex;
-    justify-content: space-around;
-    margin:auto;
-    margin-top: 5em;
-    width: 95%;
-}
-
-.defile {
-    display: flex;
-    align-items: center;
-}
-
-#carrousel {
-    position: relative;
-    width: 630px;
-    height: 400px;
-}
-
-.accueil img {
+.bg-faded {
+    box-shadow: 0 0 15px grey;
+    position: fixed;
     width: 100%;
-    margin-top: auto;
-    position: absolute;
+    z-index: 1;
+    background-color: white;
 }
 
-#avant, #apres {
-    cursor: pointer;
-    font-size: 2em;
-
+.btn {
+    background-color: #c90031;
+    border-color: #c90031;
 }
-
-.presentation {
-    width: 30%;
+.btn:hover {
+    background-color: #8F0000;
+    border-color: #8F0000;
+}
+#accueil {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
     margin: auto;
-    margin-top: 4em;
+    align-items: center;
+    padding-top: 2em;
+}
+.presentation {
+    margin: 2em 2em auto auto;
     border-left: 2px solid black;
     padding-left: 1em;
 }
 
-.tournee {
-    width: 90%;
-    margin: auto;
-    margin-top: 3em;
+/* ******* * * * * * * FIN DE LA PREMIERE PAGE * * * * * * ******** */
+#presentationCartes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.tournee p {
+.card {
+    margin: 2em;
+    border: 1px solid grey;
+}
+img {
+    width: 100%;
+}
+.modal-body img {
+    width: 100%;
+}
+.modal-body p{
     text-align: center;
 }
 
-.spectacle {
-    display: flex;
-}
 
-.spectacle figure {
-    width: 90px;
-    height: 90px;
-    background-color: green;
-}
-
+/* Phrase detail compagnie */
 .histoire {
-    margin-top: 3em;
-    margin-left: 3em;
-    display: flex;
+    width: 90%;
+    margin: 3em auto auto auto;
 }
-
 .histoire figure {
-    height: 50px;
-    width: 30px;
-    background-color: yellow;
+    width: 100%;
 }
 
-.membres figure {
-    background-color: orange;
-    height: 130px;
-    width: 130px;
+/* Contact */
+#contact {
+    width: 80%;
     margin: auto;
 }
+@media only screen and (min-width: 750px) {
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    nav li {
+        list-style-type: none;
+    }
+    nav a {
+        text-decoration: none;
+        color: black;
+    }
 
-.membres {
-    text-align: center;
-    width: 30%;
-}
+    #accueil {
+        display: flex;
+        flex-direction: row;
+        padding-top: 6em;
+    }
 
-.inferieure, .superieure {
-    display: flex;
-    justify-content: center;
-}
+    /* Dimension du carousel */
+    .carousel {
+        min-width: 500px;
+    }
+    .carousel img {
+        height: 300px;
+    }
 
-.superieure {
-    margin-top: 2em;
-}
-
-
-.contact {
-    display: flex;
-    margin-top: 6em;
-}
-
-#travers {
-    transform: rotate(-20deg);
-    width: 30%;
-    text-align: center;
-    margin-left: 2em;
-}
-
-.joindre {
-    width: 30%;
-    margin-left: 10%;
-    text-align: center;
-}
-
-.carte {
-    width: 50%;
-    margin: auto;
-    margin-top: 4em;
+    #contact {
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 /* ==========================================================================
