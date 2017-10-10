@@ -96,10 +96,17 @@ textarea {
    ========================================================================== */
 body {
     background-color: #eaecfa;
+    padding-bottom: 4em;
+    letter-spacing: 1px;
+    font-family: 'Lora', serif;
 }
-h2 {
+h2, p {
     margin: 1em auto 1em 1em;
 }
+img {
+    width: 100%;
+}
+/* Barra de navigation */
 .bg-faded {
     box-shadow: 0 0 15px grey;
     position: fixed;
@@ -108,6 +115,7 @@ h2 {
     background-color: white;
 }
 
+/* Boutons bootstrap cartes */
 .btn {
     background-color: #c90031;
     border-color: #c90031;
@@ -116,6 +124,8 @@ h2 {
     background-color: #8F0000;
     border-color: #8F0000;
 }
+
+/* Carousel et phrase d'accroche */
 #accueil {
     display: flex;
     flex-direction: column;
@@ -124,6 +134,7 @@ h2 {
     align-items: center;
     padding-top: 6em;
 }
+/* Phrase d'accroche page accueil */
 .presentation {
     margin: 2em 2em auto auto;
     border-left: 2px solid black;
@@ -141,9 +152,6 @@ h2 {
     margin: 2em;
     border: 1px solid grey;
 }
-img {
-    width: 100%;
-}
 .modal-body img {
     width: 100%;
 }
@@ -152,7 +160,7 @@ img {
 }
 
 
-/* Phrase detail compagnie */
+/* Phrase detail section compagnie */
 .histoire {
     width: 90%;
     margin: 3em auto auto auto;
